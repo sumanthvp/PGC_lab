@@ -1,0 +1,30 @@
+Experiment 1 — Matrix Multiplication
+
+Aim:
+To implement and analyze 4000 × 4000 matrix multiplication using different parallel computing approaches.
+
+Experiment:
+Matrix multiplication is implemented using:
+
+Sequential CPU execution
+
+OpenMP shared-memory parallelism
+
+MPI distributed-memory parallelism
+
+CUDA GPU parallelism
+
+
+The sequential implementation provides the baseline, while OpenMP, MPI, and CUDA are used to demonstrate parallel execution and performance improvement. All implementations produce the verification result C[0][0] = 4000.00. 
+
+Results:
+
+Method	Execution Time	Speedup
+
+Sequential	244.120000 s	1.00×
+OpenMP	30.830434 s	7.92×
+MPI	92.979510 s	2.63×
+CUDA	0.165004 s	1479.48×
+
+
+The experiment demonstrates how the same matrix multiplication workload can be executed using sequential, shared-memory, distributed-memory, and GPU-based parallel computing models. 
